@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    font-size: 1.8rem;
+    overflow: hidden;
+}
+
+/* Reusable and main styles */
+
+.container {
+    max-width: 80rem;
+    margin: 20rem auto;
+}
+
+.heading-tertiary {
+    color: hsl(0, 0%, 100%);
+    font-size: 2.4rem;
+}
+
+.main-content {
+    box-shadow: 0 0 2.4rem rgba(0, 0, 0, 0.3);
+    background-color: hsl(0, 0%, 100%);
+    overflow: hidden;
+    border-radius: 1rem;
+    margin: 4.8rem;
+
+    display: grid;
+}
+
+.main-heading {
+    color: #58bdbd;
+    font-size: 3.2rem;
+    margin-bottom: 2.4rem;
+}
+
+/* Introduction Part */
+
+.hasle {
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 1.8rem;
+    font-size: 2.4rem;
+}
+
+.perks {
+    color: hsl(218, 22%, 67%);
+    max-width: 60rem;
+    margin-bottom: 1.2rem;
+}
+
+.subscription,
+.introduction,
+.why-us {
+    padding: 4.2rem;
+}
+
+/* Subscription part */
+
+.subscription-whyUs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.subscription {
+    background-color: #53b4b1;
+}
+
+.price-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    margin-bottom: 2.8rem;
+}
+
+.price {
+    color: hsl(204, 43%, 93%);
+}
+
+.price > span {
+    font-size: 3.2rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    margin-right: 0.5rem;
+}
+
+.description {
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+button {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.8rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    background-color: hsl(71, 73%, 54%);
+}
+
+/* Why we should choose them part */
+
+.why-us {
+    background-color: #58bdbd;
+}
+
+.explanation {
+    max-width: 24rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    text-align: left;
+    margin-top: 3.2rem;
+}
+
+@media (max-width: 44em) {
+    html {
+        font-size: 50%;
+    }
+
+    body {
+        font-size: 1.6rem;
+    }
+
+    .heading-tertiary {
+        font-size: 2rem;
+    }
+
+    .hasle {
+        font-size: 2rem;
+    }
+}
+
+/* Media Queries */
+
+@media (max-width: 33em) {
+    .main-content {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        margin: 5rem auto;
+    }
+
+    .subscription-whyUs {
+        grid-template-columns: 1fr;
+    }
+
+    .heading-main {
+        font-size: 2rem;
+    }
+
+    .heading-tertiary {
+        font-size: 1.8rem;
+    }
+}
